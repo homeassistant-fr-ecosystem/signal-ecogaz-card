@@ -1,0 +1,25 @@
+import { nodeResolve } from '@rollup/plugin-node-resolve';
+import json from '@rollup/plugin-json';
+import typescript from '@rollup/plugin-typescript';
+import terser from '@rollup/plugin-terser';
+
+export default {
+  input: 'src/signal-ecogaz-card.ts',
+  output: {
+    file: 'dist/signal-ecogaz-card.js',
+    format: 'es',
+    sourcemap: false,
+  },
+  plugins: [
+    nodeResolve(),
+    json(),
+    typescript({
+      tsconfig: './tsconfig.json',
+      include: ['src/**/*.ts'],
+      noForceEmit: true,
+    }),
+    terser({
+      format: { comments: false },
+    }),
+  ],
+};
