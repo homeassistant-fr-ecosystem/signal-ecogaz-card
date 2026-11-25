@@ -6,11 +6,16 @@ RTE ÉcoGaz signal (gas supply risk level) day by day, from today to D+4.
 
 **English** · [Français](docs/fr/README.md)
 
+[![Marketplace](https://img.shields.io/badge/Marketplace-Custom-41BDF5.svg)](https://www.home-assistant.io/integrations/marketplace/)
+[![HACS Validation](https://github.com/homeassistant-fr-ecosystem/signal-ecogaz-card/actions/workflows/validate.yml/badge.svg)](https://github.com/homeassistant-fr-ecosystem/signal-ecogaz-card/actions/workflows/validate.yml)
+[![Release](https://img.shields.io/github/v/release/homeassistant-fr-ecosystem/signal-ecogaz-card)](https://github.com/homeassistant-fr-ecosystem/signal-ecogaz-card/releases/latest)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/homeassistant-fr-ecosystem/signal-ecogaz-card/blob/main/LICENSE)
+
 The integration exposes one `sensor` per forecast day. This card displays each
 day with a colour-coded level (normal / high / tight / critical) and an icon.
 
 <p align="center">
-  <img src="docs/images/card-preview.svg" alt="Schematic illustration of the Signal ÉcoGaz Card" width="400">
+  <img src="screenshots/signal-ecogaz-card.light.png" alt="Schematic illustration of the Signal ÉcoGaz Card" width="400">
 </p>
 
 *Schematic illustration, not a screenshot: the card follows your Home Assistant theme and language.*
